@@ -23,6 +23,7 @@ class Dot(Sprite):
     def start(self):
         self.is_started = True
 
+
     def jump(self):
         self.vy = JUMP_VELOCITY
 
