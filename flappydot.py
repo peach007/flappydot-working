@@ -16,8 +16,6 @@ class Dot(Sprite):
         self.is_started = False
 
     def update(self):
-        self.y += self.vy
-        self.vy += GRAVITY
         if self.is_started:
             self.y += self.vy
             self.vy += GRAVITY
@@ -28,6 +26,8 @@ class Dot(Sprite):
     def jump(self):
         self.vy = JUMP_VELOCITY
 
+    def is_out_of_screen(self):
+        pass
 
 
 
@@ -43,6 +43,7 @@ class FlappyGame(GameApp):
 
     def pre_update(self):
         pass
+
 
     def post_update(self):
         pass
